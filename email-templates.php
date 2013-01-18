@@ -1,11 +1,5 @@
 <?php
 /*
-Plugin Name: SB Welcome Email Editor
-Plugin URI: http://www.sean-barton.co.uk
-Description: Allows you to change the content and layout for many of the inbuilt Wordpress emails. Simple!
-Version: 3.5
-Author: Sean Barton
-Author URI: http://www.sean-barton.co.uk
 
 Changelog:
 <V1.6 - Didn't quite manage to add a changelog until now :)
@@ -29,6 +23,15 @@ V3.2 - 21/02/12 - Copy/paste error which broke the reminder email system. My apo
 V3.3 - 05/05/12 - Buddypress custom fields shortcode now checks for existence of itself before querying nonexistent tables.
 V3.4 - 22/05/12 - Minor update.. added [date] and [time] shortcodes to the template
 V3.5 - 16/01/13 - Minor update.. Found conflict with S2Member where the FROM address information wasnt being respected. Fixed the conflict
+Plugin Name: Welcome Email
+Plugin URI: http://github.com/Grawl/email-templates
+Original Plugin URI: http://www.sean-barton.co.uk
+Description: Allows you to change the content and layout for many of the inbuilt Wordpress emails.
+Version: 3.5.1
+Original Author: Sean Barton
+Author: Grawl
+Original Author URI: http://www.sean-barton.co.uk
+Author URI: http://grawl.ru
 */
 
 $sb_we_file = trailingslashit(str_replace('\\', '/', __FILE__));
@@ -36,7 +39,7 @@ $sb_we_dir = trailingslashit(str_replace('\\', '/', dirname(__FILE__)));
 $sb_we_home = trailingslashit(str_replace('\\', '/', get_bloginfo('wpurl')));
 $sb_we_active = true;
 
-define('SB_WE_PRODUCT_NAME', 'SB Welcome Email Editor');
+define('SB_WE_PRODUCT_NAME', 'Welcome Email');
 define('SB_WE_PLUGIN_DIR_PATH', $sb_we_dir);
 define('SB_WE_PLUGIN_DIR_URL', trailingslashit(str_replace(str_replace('\\', '/', ABSPATH), $sb_we_home, $sb_we_dir)));
 define('SB_WE_PLUGIN_DIRNAME', str_replace('/plugins/','',strstr(SB_WE_PLUGIN_DIR_URL, '/plugins/')));
