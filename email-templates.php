@@ -800,7 +800,7 @@ function sb_we_admin_page() {
 	$func = 'sb_we_admin_loader';
 	$access_level = 'manage_options';
 
-	add_menu_page(SB_WE_PRODUCT_NAME, SB_WE_PRODUCT_NAME, $access_level, $admin_page, $func);
+	add_options_page(SB_WE_PRODUCT_NAME, SB_WE_PRODUCT_NAME, $access_level, $admin_page, $func);
 
 	foreach ($sb_we_pages as $title=>$page) {
 		add_submenu_page($admin_page, $title, $title, $access_level, $page, $func);
