@@ -1,16 +1,18 @@
-=== Plugin Name ===
+=== Email Templates ===
 Contributors: seanbarton
 Tags: welcome email, wordpress welcome email, welcome email editor, mail, email, new user email, password reminder, lost password
 Requires at least: 3.0
-Tested up to: 3.4.2
+Tested up to: 3.5
 
 A Plugin to provide an interface for the Wordpress Welcome/Forgot Password Emails. Allows adding of headers to prevent emails going into spam and changes to the text. Also offers a password reminder service accessable via the quick options on the admin users page.
+
+It is a fork of «SB Welcome Email Editor» (http://wordpress.org/extend/plugins/welcome-email-editor/
 
 == Description ==
 
 I thought that the Wordpress Welcome Email to both the Admin and the User were very un-user friendly so I wrote this plugin to allow admin members to change the content and headers.
 
-It simply adds a new admin page that has a few options for the welcome email and gives you a list of hooks to use in the text to make the email a little more personal.
+It simply adds a new options page that has a few settings for the emails and gives you a list of hooks to use in the text to make the email a little more personal.
 
 Added support whereby the admin notification can be turned off or a different admin (or admins, support for multiple recipients) can be notified. Plenty of hooks to make the emails as customisable as possible.
 
@@ -21,6 +23,9 @@ Please email me or use the support forum if you have ideas for extending it or f
 I would recommend the use of an SMTP service with any Wordpress plugin. A large amount of emails fall needlessly into Spam bins across the world (I get a fair amount of comment approval spam to deal with) because the Wordpress site uses Sendmail to deliver email. I noticed an immediate improvement when using SMTP to send. It's really easy so there's no excuse :) 
 
 == Changelog ==
+
+This fork of plugin hosted on GitHub
+
 <V1.6 - Didn't quite manage to add a changelog until now :)
 
 V1.6 - 25/3/11 - Added user_id and custom_fields as hooks for use
@@ -65,15 +70,16 @@ V3.5 - 16/01/13 - Minor update.. Found conflict with S2Member where the FROM add
 
 == Installation ==
 
+Basic WordPress installation, nothing new.
+
 1. Upload the contents of the ZIP file to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Visit the admin page it creates at the bottom of the left menu
-4. Edit the settings as desired and click save.
-
-Once complete, all new user emails will be sent in the new format.
+3. Visit new settings page at Settings/Email Templates
 
 == Screenshots ==
 
-Don't look at screenshots of admin pages... Just give it a go :) If you must then see the following address for more information...
+Screenshots are here: http://www.sean-barton.co.uk/wordpress-welcome-email-editor
 
-Screenshots available at: http://www.sean-barton.co.uk/wordpress-welcome-email-editor/
+== License ==
+
+After fork it's a [WTFPL](http://ru.wikipedia.org/wiki/WTFPL) because I don't give a fuck what you want to do with this code.
