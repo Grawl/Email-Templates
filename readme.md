@@ -1,8 +1,8 @@
 # Email Templates
-## WordPress plugin
-### It is a fork of [SB Welcome Email Editor](http://wordpress.org/extend/plugins/welcome-email-editor/)
+### WordPress plugin
+#### It is a fork of [SB Welcome Email Editor](http://wordpress.org/extend/plugins/welcome-email-editor/)
 
-- Author of original plugin: Sean Barton
+- Author of original plugin: [Sean Barton](http://www.sean-barton.co.uk)
 - Tags: welcome email, wordpress welcome email, welcome email editor, mail, email, new user email, password reminder, lost password
 - Requires at least: 3.0
 - Tested up to: 3.5
