@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Welcome Email
+Plugin Name: Email Templates
 Plugin URI: http://github.com/Grawl/email-templates
 Original Plugin URI: http://www.sean-barton.co.uk
 Description: Allows you to change the content and layout for many of the inbuilt Wordpress emails.
@@ -16,7 +16,7 @@ $sb_we_dir = trailingslashit(str_replace('\\', '/', dirname(__FILE__)));
 $sb_we_home = trailingslashit(str_replace('\\', '/', get_bloginfo('wpurl')));
 $sb_we_active = true;
 
-define('SB_WE_PRODUCT_NAME', 'Welcome Email');
+define('SB_WE_PRODUCT_NAME', 'Email Templates');
 define('SB_WE_PLUGIN_DIR_PATH', $sb_we_dir);
 define('SB_WE_PLUGIN_DIR_URL', trailingslashit(str_replace(str_replace('\\', '/', ABSPATH), $sb_we_home, $sb_we_dir)));
 define('SB_WE_PLUGIN_DIRNAME', str_replace('/plugins/','',strstr(SB_WE_PLUGIN_DIR_URL, '/plugins/')));
@@ -527,7 +527,7 @@ function sb_we_settings() {
 		, 'description'=>'Send email as Text or HTML (Remember to remove html from text emails).'
 	)
 	,'welcome_email_settings_label'=>array(
-		'title'=>'Welcome Email Settings'
+		'title'=>'Email Templates'
 		, 'type'=>'label'
 		, 'style'=>'width: 500px;'
 		, 'description'=>'These settings are for the email sent to the new user on their signup.'
@@ -557,7 +557,7 @@ function sb_we_settings() {
 		, 'description'=>'Optional Header sent to change the reply to address for new user notification.'
 	)
 	,'welcome_email_admin_settings_label'=>array(
-		'title'=>'Welcome Email Admin Notification Settings'
+		'title'=>'Email Templates Admin Notification Settings'
 		, 'type'=>'label'
 		, 'style'=>'width: 500px;'
 		, 'description'=>'These settings are for the email sent to the admin on a new user signup.'
