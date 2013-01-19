@@ -460,19 +460,19 @@ function sb_we_update_settings() {
 }
 
 function sb_we_display_message($msg, $error=false, $return=false) {
-    $class = 'updated fade';
+	$class = 'updated fade';
 
-    if ($error) {
-        $class = 'error';
-    }
+	if ($error) {
+		$class = 'error';
+	}
 
-    $html = '<div id="message" class="' . $class . '" style="margin-top: 5px; padding: 7px;">' . $msg . '</div>';
+	$html = '<div id="message" class="' . $class . '" style="margin-top: 5px; padding: 7px;">' . $msg . '</div>';
 
-    if ($return) {
-            return $html;
-    } else {
-            echo $html;
-    }
+	if ($return) {
+		return $html;
+	} else {
+		echo $html;
+	}
 }
 
 function sb_we_settings() {
@@ -707,13 +707,13 @@ function sb_we_settings() {
 }
 
 function sb_we_printr($array=false) {
-    if (!$array) {
-        $array = $_POST;
-    }
+	if (!$array) {
+		$array = $_POST;
+	}
 
-    echo '<pre>';
-    print_r($array);
-    echo '</pre>';
+	echo '<pre>';
+	print_r($array);
+	echo '</pre>';
 }
 
 function sb_we_get_textarea($name, $value, $class=false, $style=false, $rows=false, $cols=false) {
